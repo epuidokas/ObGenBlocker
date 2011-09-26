@@ -1,0 +1,7 @@
+name: ObGenBlocker
+main: com.puidokas.epuidokas.ObGenBlockerPlugin
+author: Eric Puidokas
+website: www.puidokas.com
+description: Blocks obsidian generators
+version: "${project.version}"
+commands:

@@ -6,7 +6,7 @@
 
     <groupId>ObGenBlocker</groupId>
     <artifactId>ObGenBlocker</artifactId>
-    <version>1.0</version>
+    <version>0.1</version>
     <name>ObGenBlocker</name>
     <description>ObGenBlocker disables obsidian generators.</description>
     <scm>
@@ -14,12 +14,6 @@
         <url>https://github.com/epuidokas/ObGenBlocker</url>
         <developerConnection>scm:git:git@github.com:epuidokas/ObGenBlocker.git</developerConnection>
     </scm>
-    <repositories>
-        <repository>
-            <id>sk89q-mvn2</id>
-            <url>http://mvn2.sk89q.com/repo</url>
-        </repository>
-    </repositories>
     <dependencies>
         <dependency>
             <groupId>org.bukkit</groupId>
@@ -30,7 +24,7 @@
 
     <build>
         <directory>${project.basedir}/.target</directory>
-        <sourceDirectory>${basedir}/src/main/java</sourceDirectory>
+        <sourceDirectory>${project.basedir}/src/main/java</sourceDirectory>
         <resources>
             <resource>
                 <targetPath>.</targetPath>
