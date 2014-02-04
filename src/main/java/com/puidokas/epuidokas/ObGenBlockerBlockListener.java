@@ -2,12 +2,12 @@ package com.puidokas.epuidokas;
 
 import org.bukkit.block.Block;
 import org.bukkit.event.block.BlockFromToEvent;
-import org.bukkit.event.block.BlockListener;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.EventPriority;
+import org.bukkit.event.Listener; 
 
-public class ObGenBlockerBlockListener extends BlockListener{
-    
-    public ObGenBlockerBlockListener(){ }
-
+public class ObGenBlockerBlockListener implements Listener {
+    @EventHandler(priority = EventPriority.LOW)
     public void onBlockFromTo(BlockFromToEvent event) {
         if (event.isCancelled() == true)
             return;
